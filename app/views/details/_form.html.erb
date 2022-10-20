@@ -1,0 +1,42 @@
+<%= form_with(model: detail) do |form| %>
+ <br>
+  <div>
+    <%= form.label :first_name, style: "display: block", class: "block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4"  %>
+    <%= form.text_field :first_name, style: 'border: 2px solid #555;', required: true, placeholder: "Hamza" , maxlength: 25, size: 20%>
+  </div>
+  
+  <br>
+
+  <div>
+    <%= form.label :last_name, style: "display: block" %>
+    <%= form.text_field :last_name, style: 'border: 2px solid #555;', required: true, placeholder: "Rauf", maxlength: 50, size: 20 %>
+  </div>
+
+   <br>
+  
+  <div>
+    <%= form.label :nick_name, style: "display: block" %>
+    <%= form.text_field :nick_name, style: 'border: 2px solid #555;', placeholder: "optional" %>
+  </div>
+  
+  <br>
+  
+  <div>
+    <%= form.label :email_address, style: "display: block" %>
+    <%= form.email_field :email_address, style: 'border: 2px solid #555;', required: true, placeholder: "name@flowbite.com" %>
+  </div>
+  
+  <br>
+  
+  <div>
+    <%= form.label :phone_number, style: "display: block" %>
+    <%= form.telephone_field :phone_number, style: 'border: 2px solid #555;', required: true, placeholder: "1111111111" %>
+  </div>
+  
+  <br>
+  
+  <div>
+    <%= form.submit :class => "bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" %>
+  </div>
+<% end %>
+

@@ -1,0 +1,16 @@
+current directory: /home/tenx/test-app/test-app/vendor/bundle/ruby/2.7.0/gems/debug-1.6.2/ext/debug
+/home/tenx/.rbenv/versions/2.7.5/bin/ruby -I /home/tenx/.rbenv/versions/2.7.5/lib/ruby/2.7.0 -r ./siteconf20221014-74733-14le36b.rb extconf.rb
+creating Makefile
+
+current directory: /home/tenx/test-app/test-app/vendor/bundle/ruby/2.7.0/gems/debug-1.6.2/ext/debug
+make "DESTDIR=" clean
+
+current directory: /home/tenx/test-app/test-app/vendor/bundle/ruby/2.7.0/gems/debug-1.6.2/ext/debug
+make "DESTDIR="
+compiling debug.c
+compiling iseq_collector.c
+linking shared-object debug/debug.so
+
+current directory: /home/tenx/test-app/test-app/vendor/bundle/ruby/2.7.0/gems/debug-1.6.2/ext/debug
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 debug.so ./.gem.20221014-74733-e3f4vv/debug
