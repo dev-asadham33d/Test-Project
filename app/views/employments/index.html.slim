@@ -1,0 +1,10 @@
+p[style="color: green"]
+  = notice
+h1
+  | Employments
+#employments
+  - @employments.each do |employment|
+    = render employment
+    p
+      = link_to "Show this employment", employment
+= link_to "New employment", new_employment_path

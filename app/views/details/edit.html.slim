@@ -1,0 +1,8 @@
+h1
+  | Editing detail
+= render "form", detail: @detail
+br
+div
+  = link_to "Show this detail", @detail
+  |  | 
+  = link_to "Back to details", details_path

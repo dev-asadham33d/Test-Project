@@ -1,0 +1,8 @@
+= turbo_frame_tag :modal do
+  div[data-controller="turbomodal" data-action="turbo:submit-end->turbomodal#submitEnd"]
+    h1
+      | New employment
+    = render "form", employment: @employment
+    br
+    div
+      = link_to "Back to details", details_path

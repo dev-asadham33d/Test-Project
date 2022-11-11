@@ -1,0 +1,8 @@
+= turbo_frame_tag :modal do
+  div[data-controller="turbomodal" data-action="turbo:submit-end->turbomodal#submitEnd"]
+    h1
+      | New detail
+    = render "form", detail: @detail
+    br
+    div
+      = link_to "Back to details", details_path

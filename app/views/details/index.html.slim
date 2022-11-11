@@ -1,0 +1,34 @@
+p[style="color: green"]
+  = notice
+br
+br
+= link_to "New details", new_detail_path, data:{turbo_frame: "modal", class: "rounded-lg"}, class: "bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full"
+= link_to "New employment", new_employment_path, data:{turbo_frame: "modal", class: "rounded-lg"}, class: "bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full"
+br
+br
+.flex.justify-center
+  br
+  div
+    h1.text-3xl.font-bold.underline
+      | Details
+    br
+    #details
+      - @details.each do |detail|
+        = render detail
+        br
+        p
+          = link_to "Show this detail", detail, class: "bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded"
+        br
+  br
+  div
+    h1.text-3xl.font-bold
+      | Employments
+    br
+    #employments
+      - @employments.each do |employment|
+        = render employment
+        br
+        p
+          = link_to "Show this employment", employment, class: "bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded"
+        br
+br

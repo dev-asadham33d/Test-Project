@@ -1,0 +1,8 @@
+p[style="color: green"]
+  = notice
+= render @employment
+div
+  = link_to "Edit this employment", edit_employment_path(@employment)
+  |  | 
+  = link_to "Back to employments", details_path
+  = button_to "Destroy this employment", @employment, method: :delete

@@ -1,0 +1,24 @@
+.p-6.max-w-sm.bg-white.rounded-lg.border.border-gray-200.shadow-md.dark:bg-gray-800.dark:border-gray-700
+  |  <div id="
+  = dom_id detail
+  | "> 
+  p
+    strong
+      | first_name:
+    = detail.first_name
+  p
+    strong
+      | last_name:
+    = detail.last_name
+  p
+    strong
+      | nick_name:
+    = detail.nick_name
+  p
+    strong
+      | email_address:
+    = detail.email_address
+  p
+    strong
+      | phone_number:
+    = number_to_phone(detail.phone_number)
